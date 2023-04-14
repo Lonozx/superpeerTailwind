@@ -3,8 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination {
+        color: yellow;
+      }
+    </style>
     <title>Superpeer</title>
   </head>
   <body>
@@ -19,10 +58,10 @@
       </div>
       <div class="flex px-36 py-9 justify-between relative gap-5">
         <div class="text-left flex flex-col self-start gap-8 w-1/2">
-          <h1 class="text-7xl">
+          <h1 class="text-7xl w-3/4">
             A video platform for the world’s leading minds
           </h1>
-          <p class="text-neutral-700">
+          <p class="text-neutral-700 w-3/4">
             Superpeer gives you the tools you need to have paid 1:1 video calls
             and livestreams with your audience and paid subscribers.
           </p>
@@ -648,9 +687,121 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col py-60">
+      <div class="flex flex-col pt-60">
         <h2 class="text-6xl">Pricing</h2>
       </div>
+      <div class="swiper mySwiper h-64 w-3/4 mt-16 pb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="bg-slate-950 rounded-3xl flex flex-col items-center gap-5 p-8 w-80 h-52"
+            >
+              <p class="text-white">1:1 Calls</p>
+              <div class="flex gap-8">
+                <span class="line-through text-gray-500 text-5xl">10%</span
+                ><span class="text-white text-5xl">0%</span>
+              </div>
+              <p class="text-gray-400">Just Credit Card fees - 3%</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-slate-950 rounded-3xl flex flex-col items-center gap-5 p-8 w-80 h-52 shadow-yellow-400 drop-shadow-lg"
+            >
+              <p class="text-white">Channels</p>
+              <div class="flex gap-8">
+                <span class="text-white text-5xl">10%</span>
+              </div>
+              <p class="text-gray-400">Plus Credit Card fees - 3%</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next bg-yellow-300 text-black p-7 w-12 h-12 rounded-full"
+        ></div>
+        <div
+          class="swiper-button-prev bg-yellow-300 text-black p-7 w-12 h-12 rounded-full"
+        ></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="flex flex-col pt-60 items-center gap-6">
+        <h2 class="text-6xl">Ready to become a Superpeer?</h2>
+        <p class="text-gray-700 w-96 text-center">
+          Build and grow your community face-to-face and make money while you do
+          it.
+        </p>
+        <button class="bg-yellow-300 w-48 h-14 rounded-lg">
+          REQUEST INVITE
+        </button>
+      </div>
+      <div class="flex pt-60 gap-80 justify-center mb-14">
+        <ul class="flex gap-14">
+          <li>
+            <p>Blog</p>
+          </li>
+          <li>
+            <p>FAQ</p>
+          </li>
+          <li>
+            <p>Privacy</p>
+          </li>
+          <li>
+            <p>Terms</p>
+          </li>
+        </ul>
+        <ul class="flex gap-10">
+          <li>
+            <a href="https://twitter.com/?lang=ru" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.4758 4.56909C22.6262 4.95809 21.719 5.22309 20.7638 5.34409C21.7373 4.73309 22.4861 3.77009 22.8403 2.62109C21.9274 3.17609 20.9155 3.58009 19.8384 3.80509C18.9782 2.84609 17.7523 2.24609 16.391 2.24609C13.7827 2.24609 11.6678 4.44909 11.6678 7.16309C11.6678 7.55309 11.711 7.92809 11.7898 8.28709C7.86336 8.09409 4.38336 6.13009 2.0544 3.16109C1.64448 3.88309 1.41504 4.72209 1.41504 5.63609C1.41504 7.34609 2.25024 8.84909 3.51552 9.73209C2.7408 9.70609 2.01216 9.48409 1.37664 9.11609V9.17709C1.37664 11.5621 3.00192 13.5511 5.1648 14.0041C4.76832 14.1151 4.34976 14.1751 3.92064 14.1751C3.6192 14.1751 3.33024 14.1451 3.04128 14.0891C3.64704 16.0421 5.38848 17.4661 7.46112 17.5061C5.84832 18.8251 3.80448 19.6111 1.6032 19.6111C1.2288 19.6111 0.85536 19.5881 0.48 19.5441C2.58144 20.9381 5.05728 21.7531 7.73472 21.7531C16.4266 21.7531 21.1738 14.2571 21.1738 7.76709C21.1738 7.55809 21.1738 7.34709 21.1594 7.13709C22.0819 6.44809 22.8874 5.57709 23.521 4.58909L23.4758 4.56909Z"
+                  fill="#222222"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sidercutter/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0C8.8704 0 8.47968 0.015 7.25088 0.072C6.024 0.132 5.1888 0.333 4.4544 0.63C3.69696 0.936 3.05376 1.347 2.41344 2.014C1.77312 2.681 1.3776 3.35 1.0848 4.14C0.79968 4.905 0.60576 5.775 0.54912 7.053C0.49152 8.333 0.48 8.74 0.48 12C0.48 15.26 0.4944 15.667 0.54912 16.947C0.60672 18.224 0.79968 19.095 1.0848 19.86C1.37856 20.648 1.77312 21.319 2.41344 21.986C3.05376 22.652 3.696 23.065 4.4544 23.37C5.18976 23.666 6.02496 23.869 7.25088 23.928C8.47968 23.988 8.8704 24 12 24C15.1296 24 15.5203 23.985 16.7491 23.928C17.975 23.868 18.8112 23.666 19.5456 23.37C20.3021 23.064 20.9462 22.652 21.5866 21.986C22.2259 21.319 22.6224 20.651 22.9152 19.86C23.1994 19.095 23.3942 18.224 23.4509 16.947C23.5085 15.667 23.52 15.26 23.52 12C23.52 8.74 23.5056 8.333 23.4509 7.053C23.3933 5.776 23.1994 4.904 22.9152 4.14C22.6214 3.351 22.2259 2.681 21.5866 2.014C20.9462 1.347 20.305 0.935 19.5456 0.63C18.8112 0.333 17.975 0.131 16.7491 0.072C15.5203 0.012 15.1296 0 12 0ZM12 2.16C15.0749 2.16 15.4416 2.176 16.656 2.231C17.7792 2.286 18.3888 2.48 18.7939 2.646C19.3334 2.863 19.7155 3.123 20.1206 3.542C20.5229 3.962 20.7725 4.361 20.9808 4.923C21.1382 5.345 21.3264 5.98 21.3773 7.15C21.432 8.416 21.4445 8.796 21.4445 12C21.4445 15.204 21.4301 15.585 21.3734 16.85C21.3149 18.02 21.1277 18.655 20.9693 19.077C20.7542 19.639 20.5094 20.037 20.1062 20.459C19.704 20.878 19.3152 21.138 18.7814 21.355C18.3782 21.519 17.759 21.715 16.6358 21.768C15.4128 21.825 15.0528 21.838 11.9712 21.838C8.88864 21.838 8.52864 21.823 7.30656 21.764C6.1824 21.703 5.5632 21.508 5.16 21.343C4.61376 21.119 4.2384 20.864 3.83616 20.444C3.432 20.025 3.17376 19.62 2.97216 19.064C2.81376 18.644 2.62752 17.999 2.56896 16.829C2.52576 15.569 2.5104 15.18 2.5104 11.985C2.5104 8.789 2.52576 8.399 2.56896 7.124C2.62752 5.954 2.81376 5.31 2.97216 4.89C3.17376 4.32 3.432 3.93 3.83616 3.509C4.2384 3.09 4.61376 2.82 5.16 2.611C5.5632 2.445 6.16896 2.25 7.29216 2.19C8.51616 2.145 8.87616 2.13 11.9568 2.13L12 2.16ZM12 5.838C8.7312 5.838 6.08448 8.598 6.08448 12C6.08448 15.405 8.73408 18.162 12 18.162C15.2688 18.162 17.9155 15.402 17.9155 12C17.9155 8.595 15.2659 5.838 12 5.838ZM12 16C9.8784 16 8.16 14.21 8.16 12C8.16 9.79 9.8784 8 12 8C14.1216 8 15.84 9.79 15.84 12C15.84 14.21 14.1216 16 12 16ZM19.5322 5.595C19.5322 6.39 18.912 7.035 18.1498 7.035C17.3866 7.035 16.7674 6.389 16.7674 5.595C16.7674 4.801 17.3875 4.156 18.1498 4.156C18.911 4.155 19.5322 4.801 19.5322 5.595Z"
+                  fill="#222222"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+        <p>Superpeer, Inc.</p>
+      </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
