@@ -49,14 +49,17 @@
   </head>
   <body>
     <div class="wrapper flex flex-col place-content-center items-center">
+   
       <div class="container px-16 py-8">
-        <nav class="flex items-center justify-between">
+        <nav id="header" class="flex items-center justify-between">
           <img src="./images/peerLogo.png" alt="superpeer logo" />
           <button class="max-[430px]:invisible rounded-md border w-28 h-10 border-black">
             Sign in
           </button>
         </nav>
       </div>
+
+    <section id="enter-section">
       <div class="flex sm:flex max-[830px]:px-4 max-[430px]:flex-col px-48 py-9 justify-between relative gap-5">
         <div class=" h-[643px] text-left flex flex-col self-start gap-8 w-1/2 max-[430px]:w-full max-[430px]:items-center max-[430px]:text-center">
           <h1 class="text-7xl ">
@@ -70,6 +73,7 @@
             REQUEST INVITE
           </button>
         </div>
+      
         <div class="relative w-1/2  max-[430px]:items-center  max-[430px]:w-full">
           <img class="max-[430px]:px-10" src="./images/sub-right.jpg" alt="" />
           <img
@@ -79,7 +83,9 @@
           />
         </div>
       </div>
-     
+    </section>
+
+    <section id="videocalls-section">
       <div
         class="w-screen relative flex-col items-center justify-center flex py-11 bg-gradient-to-b from-yellow-100 to-white mt-60 max-[830px]:mt-10 max-[430px]:mt-10"
       >
@@ -134,6 +140,9 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="livestreams-section">
       <div
         class="w-screen h-[1495px]  flex-col items-center py-11 max-[830px]:mt-10 flex bg-gradient-to-b from-fuchsia-200 to-white mt-60 max-[430px]:mt-10 gap-5"
       >
@@ -188,6 +197,9 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="feature-section">
       <div
         class="flex flex-col mt-60 max-[430px]:mt-10 py-11 px-36 items-center justify-center gap-5"
       >
@@ -856,6 +868,9 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="pricing-section">
       <div class="bg-yellow-50 w-screen h-full mt-60 max-[430px]:mt-10 pb-10 flex flex-col items-center">
         <h2 class="text-6xl text-black mt-10">Pricing</h2>
      
@@ -894,6 +909,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+  </section>
+
+  <section id="callback-section">
       <div class="flex flex-col max-[430px]:pt-10 max-[830px]:text-center max-[430px]:text-center pt-60 items-center gap-6">
         <h2 class="text-6xl">Ready to become a Superpeer?</h2>
         <p class="text-gray-700 w-96 text-center">
@@ -904,6 +922,9 @@
           REQUEST INVITE
         </button>
       </div>
+    </section>
+
+    <footer id="footer">
       <div class="flex max-[430px]:flex-col max-[430px]:text-center max-[830px]:flex-col max-[830px]:gap-10 max-[830px]:items-center max-[830px]:text-center max-[430px]:items-center pt-60 max-[430px]:gap-4 gap-80 justify-center mb-14">
         <ul class="flex gap-14 max-[430px]:gap-6">
           <li>
@@ -953,6 +974,8 @@
         </ul>
         <p>Superpeer, Inc.</p>
       </div>
+    </footer>
+
     </div>
 
     <!-- Swiper JS -->
